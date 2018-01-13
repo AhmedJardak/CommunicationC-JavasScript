@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:Sample"
+             xmlns:fwv="clr-namespace:Xam.Plugin.WebView.Abstractions;assembly=Xam.Plugin.WebView.Abstractions"
+             x:Class="Sample.MainPage">
+<StackLayout>
+    <!-- Source="http://192.168.241.161:8080/bonita/mobile"-->
+        <!-- Source="http://192.168.241.161:3000/Home/About"-->
+
+        <fwv:FormsWebView x:Name="SampleWebView"
+                      HorizontalOptions="FillAndExpand" 
+                      VerticalOptions="FillAndExpand"
+                      ContentType="Internet"/>
+        <Button x:Name="execute" Text="Execute JavaScript Function From C# "/>
+    </StackLayout>
+	
+</ContentPage>
